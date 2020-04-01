@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:student_mentee/Source/Family_Screen/Login.dart';
 import 'package:student_mentee/Themes/light_colors.dart';
 
 class SignUp extends StatefulWidget {
@@ -103,7 +104,7 @@ class _SignUpState extends State<SignUp> {
               ),
               new GestureDetector(
                 onTap: (){
-
+                  Navigator.push(context , MaterialPageRoute(builder: (context) => Login(isMentor: widget.isMentor,)));
                 },
                 child: new Text(
                   "Login",
