@@ -22,7 +22,7 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor: Theme.of(context).backgroundColor,
       body: Padding(
         padding: EdgeInsets.only(
             top: ScreenUtil().setWidth(60.0),
@@ -134,7 +134,7 @@ class Signup_Button extends StatelessWidget {
     return new Container(
       height: ScreenUtil().setHeight(120.0),
       child: RaisedButton(
-        color: Theme.of(context).primaryColor,
+        color: Theme.of(context).backgroundColor,
         shape: new RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50.0),
             side: BorderSide(color: Colors.white, width: 1)),
@@ -223,7 +223,7 @@ class ProfilePicture extends StatelessWidget {
           ),
           new RaisedButton(
             onPressed: () {},
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).backgroundColor,
             shape: new RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
                 side: new BorderSide(

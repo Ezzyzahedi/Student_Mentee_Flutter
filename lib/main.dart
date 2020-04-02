@@ -12,8 +12,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Student Mentee App',
       theme: ThemeData(
-        backgroundColor: LightColor.background,
-        primaryColor: LightColor.purple
+        backgroundColor: LightColor.purple,
+        primaryColor: LightColor.background,
       ),
       home: SplashScreen(),
     );

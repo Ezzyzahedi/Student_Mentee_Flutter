@@ -17,9 +17,10 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
+        backgroundColor: Theme.of(context).backgroundColor,
         elevation: 0.0,
       ),
-      backgroundColor: Theme.of(context).primaryColor,
+      backgroundColor:Theme.of(context).backgroundColor,
       body: Padding(
         padding: EdgeInsets.only(
             top: ScreenUtil().setWidth(60.0),
@@ -99,11 +100,12 @@ class Login_Button extends StatelessWidget {
     return new Container(
       height: ScreenUtil().setHeight(120.0),
       child: RaisedButton(
-        color: Theme.of(context).primaryColor,
+        color: Theme.of(context).backgroundColor,
         shape: new RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50.0),
             side: BorderSide(color: Colors.white, width: 1)),
         onPressed: () {
+          
           // Few Backend Stuffs ..
           // Thne go the Homapage after all signup things made .
           //Navigator.push(context, MaterialPageRoute(builder: (context) =>  Check(userName: _controller.text)));

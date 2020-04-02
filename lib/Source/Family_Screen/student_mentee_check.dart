@@ -9,10 +9,7 @@ class Check extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
-      appBar: new AppBar(
-        elevation: 0.0,
-      ),
+      backgroundColor: Theme.of(context).backgroundColor,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: ScreenUtil().setWidth(60.0)),
         child: new ListView(
@@ -66,7 +63,7 @@ class SelectionButton extends StatelessWidget {
     return new Container(
       height: ScreenUtil().setHeight(120.0),
       child: RaisedButton(
-        color: Theme.of(context).primaryColor,
+        color: Theme.of(context).backgroundColor,
         shape: new RoundedRectangleBorder(
           borderRadius:  BorderRadius.circular(50.0),
           side: BorderSide(
