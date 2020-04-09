@@ -12,7 +12,7 @@ class Wrapper extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
-      body: firstTime ? WelcomeScreen() : HomePage() 
+      body: firstTime ? WelcomeScreen() : StudentHomePage() 
     );
   }
 }

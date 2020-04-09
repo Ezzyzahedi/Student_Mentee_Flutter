@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "87156311350",
-    "firebase_url": "https://student-mentee-flutter.firebaseio.com",
-    "project_id": "student-mentee-flutter",
-    "storage_bucket": "student-mentee-flutter.appspot.com"
+    "project_number": "386122705880",
+    "firebase_url": "https://student-mentee-flutter-7fb7c.firebaseio.com",
+    "project_id": "student-mentee-flutter-7fb7c",
+    "storage_bucket": "student-mentee-flutter-7fb7c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:87156311350:android:90fc79032c28b3c90f5f97",
+        "mobilesdk_app_id": "1:386122705880:android:26a6029d24ba79dfb220ad",
         "android_client_info": {
           "package_name": "com.example.student_mentee"
         }
       },
       "oauth_client": [
         {
-          "client_id": "87156311350-i0u127cot3du421rgkflt8k5bhtr5mg1.apps.googleusercontent.com",
+          "client_id": "386122705880-gef11m0j2704qs83gnpes02lv6071efc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB0nKvQTkTO2ljc5xAVq3yyKOzLh5kDsbo"
+          "current_key": "AIzaSyCvsC0y8CE9sY7vNu1J0MG-XcJ16cCSdaE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "87156311350-i0u127cot3du421rgkflt8k5bhtr5mg1.apps.googleusercontent.com",
+              "client_id": "386122705880-gef11m0j2704qs83gnpes02lv6071efc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

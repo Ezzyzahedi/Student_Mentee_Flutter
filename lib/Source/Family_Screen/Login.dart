@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
+import 'package:student_mentee/Source/Student_Screens/student_home.dart';
 
 class Login extends StatefulWidget {
   final bool isMentor ;
@@ -105,7 +106,7 @@ class Login_Button extends StatelessWidget {
             borderRadius: BorderRadius.circular(50.0),
             side: BorderSide(color: Colors.white, width: 1)),
         onPressed: () {
-          
+          Navigator.push(context , MaterialPageRoute(builder: (context) => StudentHomePage()));
           // Few Backend Stuffs ..
           // Thne go the Homapage after all signup things made .
           //Navigator.push(context, MaterialPageRoute(builder: (context) =>  Check(userName: _controller.text)));

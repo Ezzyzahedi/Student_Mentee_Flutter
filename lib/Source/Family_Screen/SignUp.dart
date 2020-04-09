@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:student_mentee/Services/authentication.dart';
 import 'package:student_mentee/Source/Family_Screen/Login.dart';
 import 'package:student_mentee/Themes/light_colors.dart';
 
@@ -15,6 +16,7 @@ class SignUp extends StatefulWidget {
 
 class _SignUpState extends State<SignUp> {
   final _formKey = GlobalKey<FormState>();
+  Authentication _authentication = new Authentication();
   TextEditingController _emailController = new TextEditingController();
   TextEditingController _phoneController = new TextEditingController();
   TextEditingController _collegenumberController = new TextEditingController();
@@ -84,7 +86,34 @@ class _SignUpState extends State<SignUp> {
           new SizedBox(
             height: ScreenUtil().setHeight(110.0),
           ),
-          new Signup_Button(),
+          new Container(
+            height: ScreenUtil().setHeight(120.0),
+            child: RaisedButton(
+              color: Theme.of(context).backgroundColor,
+              shape: new RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(50.0),
+                  side: BorderSide(color: Colors.white, width: 1)),
+              onPressed: () {
+                // Few Backend Stuffs ..
+                // Thne go the Homapage after all signup things made .
+                //Navigator.push(context, MaterialPageRoute(builder: (context) =>  Check(userName: _controller.text)));
+                print("Email " +
+                    _emailController.text +
+                    "  Password    " +
+                    _collegenumberController.text);
+                _authentication.signUp(_emailController.text.toString(),
+                    _collegenumberController.text.toString());
+              },
+              child: new Text(
+                "Sign up",
+                style: new TextStyle(
+                    fontFamily: 'Nunito',
+                    color: Colors.white,
+                    fontSize: ScreenUtil().setSp(65.0),
+                    fontWeight: FontWeight.w200),
+              ),
+            ),
+          ),
           new SizedBox(
             height: ScreenUtil().setHeight(50.0),
           ),
@@ -94,63 +123,34 @@ class _SignUpState extends State<SignUp> {
               new Text(
                 "Already have an account?",
                 style: new TextStyle(
-                  fontFamily: 'Nunito',
-                  fontSize: ScreenUtil().setSp(50.0),
-                  color: LightColor.titleTextColor
-                ),
+                    fontFamily: 'Nunito',
+                    fontSize: ScreenUtil().setSp(50.0),
+                    color: LightColor.titleTextColor),
               ),
               new SizedBox(
                 width: ScreenUtil().setWidth(40.0),
               ),
               new GestureDetector(
-                onTap: (){
-                  Navigator.push(context , MaterialPageRoute(builder: (context) => Login(isMentor: widget.isMentor,)));
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Login(
+                                isMentor: widget.isMentor,
+                              )));
                 },
                 child: new Text(
                   "Login",
                   style: new TextStyle(
-                    fontFamily: 'Nunito',
-                    fontSize: ScreenUtil().setSp(50.0),
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white
-                  ),
+                      fontFamily: 'Nunito',
+                      fontSize: ScreenUtil().setSp(50.0),
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white),
                 ),
               )
             ],
           )
         ]),
-      ),
-    );
-  }
-}
-
-class Signup_Button extends StatelessWidget {
-  const Signup_Button({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return new Container(
-      height: ScreenUtil().setHeight(120.0),
-      child: RaisedButton(
-        color: Theme.of(context).backgroundColor,
-        shape: new RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(50.0),
-            side: BorderSide(color: Colors.white, width: 1)),
-        onPressed: () {
-          // Few Backend Stuffs ..
-          // Thne go the Homapage after all signup things made .
-          //Navigator.push(context, MaterialPageRoute(builder: (context) =>  Check(userName: _controller.text)));
-        },
-        child: new Text(
-          "Sign up",
-          style: new TextStyle(
-              fontFamily: 'Nunito',
-              color: Colors.white,
-              fontSize: ScreenUtil().setSp(65.0),
-              fontWeight: FontWeight.w200),
-        ),
       ),
     );
   }
@@ -174,6 +174,7 @@ class PhoneNumberCollector extends StatelessWidget {
           child: new TextField(
             keyboardType: TextInputType.number,
             cursorColor: Theme.of(context).primaryColor,
+            style: new TextStyle(color: Colors.white, fontFamily: "Nunito"),
             decoration: new InputDecoration(
                 prefixIcon: new Icon(
                   Icons.add,
@@ -191,6 +192,7 @@ class PhoneNumberCollector extends StatelessWidget {
               controller: _phoneController,
               keyboardType: TextInputType.number,
               cursorColor: Theme.of(context).primaryColor,
+              style: new TextStyle(color: Colors.white, fontFamily: "Nunito"),
               decoration: new InputDecoration(helperText: 'Phone number'),
             )),
       ],
