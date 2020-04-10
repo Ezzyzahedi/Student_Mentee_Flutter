@@ -9,26 +9,19 @@ Mozilla
 Building this app with intention of learning flutter better .
 
 ## 📱 Screenshots
-|                                                     Splash Screen                                                      |                                                   Login Page                                                   |
-|:----------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|
-| ![](https://github.com/iamabhishek229313/tinder_clone/blob/master/screenshots/tinder_clone_splash_screen.png?raw=true) | ![](https://github.com/iamabhishek229313/tinder_clone/blob/master/screenshots/tinder_clone_login.png?raw=true) |
+|                                                        Welcome Screen                                                        |                                                         Selection Page                                                         |
+|:----------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|
+| ![](https://github.com/iamabhishek229313/Student_Mentee_Flutter/blob/master/Screenshots/student_mentee_Welcome.png?raw=true) | ![](https://github.com/iamabhishek229313/Student_Mentee_Flutter/blob/master/Screenshots/student_mentee_selection.png?raw=true) |
 
-|                                          Phone number verification                                           |                                                  Profile Screen                                                  |
-|:------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------:|
-| ![](https://github.com/iamabhishek229313/tinder_clone/blob/master/screenshots/tinder_clone_otp.png?raw=true) | ![](https://github.com/iamabhishek229313/tinder_clone/blob/master/screenshots/tinder_clone_profile.png?raw=true) |
+|                                                           Sign Up                                                           |                                                           Log In                                                           |
+|:---------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------:|
+| ![](https://github.com/iamabhishek229313/Student_Mentee_Flutter/blob/master/Screenshots/student_mentee_singup.png?raw=true) | ![](https://github.com/iamabhishek229313/Student_Mentee_Flutter/blob/master/Screenshots/student_mentee_login.png?raw=true) |
 
 
-|                                                    Messages and Feeds                                                     |                                                    In person chat                                                     |
-|:-------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------:|
-| ![](https://github.com/iamabhishek229313/tinder_clone/blob/master/screenshots/tinder_clone_messagesandfeeds.png?raw=true) | ![](https://github.com/iamabhishek229313/tinder_clone/blob/master/screenshots/tinder_clone_InChatScreen.png?raw=true) |
 
-|                                              Tinder Right Swipe                                               |                                               Tinder Left Swipe                                               |
-|:-------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------:|
-| ![](https://github.com/iamabhishek229313/tinder_clone/blob/master/screenshots/tinder_clone_nope.png?raw=true) | ![](https://github.com/iamabhishek229313/tinder_clone/blob/master/screenshots/tinder_clone_like.png?raw=true) |
-
- Matchings     |
+ Mentee Form     |
 :-------------------------:|
-![](https://github.com/iamabhishek229313/tinder_clone/blob/master/screenshots/tinder_clone_main.png)
+![](https://github.com/iamabhishek229313/Student_Mentee_Flutter/blob/master/Screenshots/student_mentee_form.png?raw=true)
 
 
 ## 📚 Technical Details
